@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".enviar_correo_fragment" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="272dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Redactar"
+            android:textAlignment="center"
+            android:textSize="24sp" />
+
+        <ImageView
+            android:id="@+id/imgBorrador"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/archive_black_24dp" />
+
+        <ImageView
+            android:id="@+id/imgEnviar"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/send_black_24dp" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/emisor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="mjimenezgarcia3@educa.madrid.org" />
+
+    <EditText
+        android:id="@+id/destinatario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="To:" />
+
+    <EditText
+        android:id="@+id/asunto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Asunto:" />
+
+    <EditText
+        android:id="@+id/cuerpoMensaje"
+        android:layout_width="match_parent"
+        android:layout_height="555dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Escribir correo"
+        android:textAlignment="center" />
+</LinearLayout>
